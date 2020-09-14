@@ -60,6 +60,7 @@ public class Eslo {
             //Feladatok.feladat8();
             //Feladatok.feladat9();
             //Feladatok.feladat10();
+            Feladatok.feladat11();
     }
     
 }
@@ -129,6 +130,26 @@ public class Eslo {
                 
                 
         }       
-            
+            static void feladat11() throws IOException{
+                int almaAr = 50;
+                int szilvaAr = 100;
+                int szoloAr = 200;
+                System.out.println("Az Alma ara : " + almaAr);
+                System.out.println("Az Szilva ara : " + szilvaAr);
+                System.out.println("Az Szolo ara : " + szoloAr);
+                System.out.println("Kerem a vasarolt alma sulyat: ");
+                int vettAlma = Integer.parseInt(br.readLine()) ;
+                System.out.println("Kerem a vasarolt szilva sulyat: ");
+                int vettSzilva = Integer.parseInt(br.readLine()) ;
+                System.out.println("Kerem a vasarolt szolo sulyat: ");
+                int vettSzolo = Integer.parseInt(br.readLine()) ;
+                
+                System.out.println("Alma osszesen : " + vettAlma*almaAr);
+                System.out.println("Szilva osszesen : " + vettSzilva*szilvaAr);
+                System.out.println("Szolo osszesen : " + vettSzolo*szoloAr);
+                System.out.println("");
+                System.out.println("-------------------------------------------");
+                System.out.println("Osszeg : \t" + (vettAlma*almaAr+vettSzilva*szilvaAr+vettSzolo*szoloAr));
+            }
             
         }
