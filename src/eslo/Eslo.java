@@ -60,7 +60,7 @@ public class Eslo {
             //Feladatok.feladat8();
             //Feladatok.feladat9();
             //Feladatok.feladat10();
-            Feladatok.feladat11();
+            //Feladatok.feladat11();
     }
     
 }
