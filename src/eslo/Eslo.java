@@ -5,6 +5,8 @@
  */
 package eslo;
 
+import java.util.Scanner;
+
 /**
  *
  * @author jager.balazs
@@ -16,8 +18,22 @@ public class Eslo {
      */
     public static void main(String[] args) {
         
+        System.out.println("Kecske");
+        System.out.print("Retek");
         
-        // TODO code application logic here
+        Scanner console = new Scanner(System.in);
+        
+        System.out.print("Kerek egy egesz szamot: ");
+        int szam = console.nextInt();
+        
+        System.out.println("Kerek egy nevet is : ");
+        String nev = console.next();
+        
+        
+        System.out.println("Udv "+nev+" a szam amit valasztottal : "+ szam);
+        
+        
+        
     }
     
 }
