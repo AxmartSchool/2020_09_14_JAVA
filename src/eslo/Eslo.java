@@ -5,6 +5,10 @@
  */
 package eslo;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -16,24 +20,40 @@ public class Eslo {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         
-        System.out.println("Kecske");
-        System.out.print("Retek");
+//        System.out.println("Kecske");
+//        System.out.print("Retek");
+//        
+//        Scanner console = new Scanner(System.in);
+//        
+//        System.out.print("Kerek egy egesz szamot: ");
+//        int szam = console.nextInt();
+//        
+//        System.out.println("Kerek egy nevet is : ");
+//        String nev = console.nextLine();
+//        
+//        
+//        System.out.println("Udv "+nev+" a szam amit valasztottal : "+ szam);
+//        System.out.println("A szam 10 szerese : " + szam*10);
+//        double szam2 = console.nextDouble();
+//        
+//        console.close();
         
-        Scanner console = new Scanner(System.in);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
-        System.out.print("Kerek egy egesz szamot: ");
-        int szam = console.nextInt();
+        String akarmi = br.readLine();
         
-        System.out.println("Kerek egy nevet is : ");
-        String nev = console.next();
+        int szam = Integer.parseInt(br.readLine());
         
+        Random rnd = new Random();
         
-        System.out.println("Udv "+nev+" a szam amit valasztottal : "+ szam);
-        
+        int veletlenSzam = rnd.nextInt(5);
         
         
+        System.out.println(veletlenSzam);
+        
+        System.out.println("Koszonom");
     }
     
 }
